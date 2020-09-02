@@ -38,8 +38,8 @@ let pets = [{ name: "Max", type: "dog", bornOn: 2018 },
 const getAge = (pet) =>{return new Date().getFullYear() - pet.bornOn}
 const petsWithAge = () => 
 {	return pets.filter((pet)=>{	return pet.age = getAge(pet)})}
-console.log(petsWithAge());
+console.log(petsWithAge())
 const dogs = () =>{return pets.filter((pet)=>{	return pet.type == "dog"})}
-console.log(dogs());
+console.log(dogs())
 const Jasper = () => {return pets.find(pet=>{return pet.name == "Jasper"})}
-console.log("Jasper is " + Jasper().age + " years old");
+console.log(`Jasper is  ${Jasper().age} years old`);
